@@ -1,0 +1,79 @@
+body {
+
+}
+
+.content {
+  width: 1024px;
+  margin: 100px auto;
+}
+
+.release {
+  box-sizing: border-box;
+  margin: 20px 50px;
+}
+
+.stable {
+  background: url(tomster-release.png) top left no-repeat;
+  background-size: auto contain;
+  padding-left: 250px;
+  margin: 50px;
+}
+
+.lts {
+  background: url(tomster-lts.png) top left no-repeat;
+}
+
+.beta {
+  background: url(tomster-beta.png) top left no-repeat;
+}
+
+.canary {
+  background: url(tomster-canary.png) top left no-repeat;
+  margin-top: 50px;
+}
+
+.canary, .lts, .beta {
+  background-size: auto 180px;
+  padding-left: 160px;
+}
+
+.lesser-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+h3, h4 {
+  text-transform: none;
+}
+
+.release h3 {
+  font-size: 130%;
+  color: #865931;
+}
+
+.stable h3 {
+  font-size: 270%;
+  text-transform: none;
+  color: #865931;
+}
+
+.release .date {
+  font-size: 80%;
+}
+
+.projects ul {
+  list-style: none;
+}
+
+.projects li p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.projects pre {
+  font-family: monospace;
+  font-size: 125%;
+  padding: 5px;
+  background-color: #fdf6e3;
+}
