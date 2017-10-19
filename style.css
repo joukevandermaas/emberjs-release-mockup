@@ -3,7 +3,7 @@ body {
 }
 
 .content {
-  width: 1024px;
+  max-width: 1024px;
   margin: 100px auto;
 }
 
@@ -13,35 +13,28 @@ body {
 }
 
 .stable {
-  background: url(tomster-release.png) top left no-repeat;
   background-size: auto contain;
-  padding-left: 250px;
-  margin: 50px;
+  max-width: 600px;
+  margin: 50px auto 150px auto;
 }
 
-.lts {
-  background: url(tomster-lts.png) top left no-repeat;
+.stable img {
+  float: right;
 }
 
-.beta {
-  background: url(tomster-beta.png) top left no-repeat;
-}
-
-.canary {
-  background: url(tomster-canary.png) top left no-repeat;
-  margin-top: 50px;
-}
-
-.canary, .lts, .beta {
-  background-size: auto 180px;
-  padding-left: 160px;
+.beta img, .lts img, .canary img {
+  text-align: center;
+  height: 100px;
+  width: auto;
+  margin: 0 auto 10px auto;
+  display: block;
 }
 
 .lesser-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 h3, h4 {
@@ -57,6 +50,10 @@ h3, h4 {
   font-size: 270%;
   text-transform: none;
   color: #865931;
+}
+
+h3.version-number {
+  font-size: 500%;
 }
 
 .release .date {
